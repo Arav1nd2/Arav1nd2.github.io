@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
 body {
     background-color: black;
     color:white !important;
+    font-family: 'Roboto Mono', monospace;
 }
 #main-page {
     display: none;
@@ -44,7 +47,31 @@ footer {
     background-color: #0066cc; 
 
 }
+.col-sm-6 {
+    padding: 0 !important;
+}
+.row {
+    padding-left: 50px;
+    width: 90%;
+}
 
+.exp-adv {
+    color: greenyellow;
+    font-size: 1.3rem;
+}
+.exp-inter {
+    color: orange;
+    font-size: 1.3rem;
+
+}
+.exp-beg  {
+    color: rgb(167, 0, 0);
+    font-size: 1.3rem;
+
+}
+.details {
+    padding-left: 30px;
+}
 ul {
     list-style: none;   
     padding: 0;
@@ -55,9 +82,7 @@ li {
     color: grey;
     font-size: 1.2rem;
 }
-li:hover {
-    color: lightgray;
-}
+
 .navbar {
     background-color:rgb(29, 29, 29);
     position: fixed;
@@ -81,12 +106,65 @@ li:hover {
 .nav-dropdown {
     background-color: rgb(51,51,51);
     font-size: 1rem; 
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.acad-title {
+    color: rgb(151, 201, 77);
+}
+.branch {
+    color:rgb(211, 143, 17);
+} 
+.marks {
+    padding-left: 30px;
 }
 .opt {
     padding: 4% 17%;
 }
 .opt:hover {
     background-color: rgb(51,51,51);
+    cursor: pointer;
+}
+
+.header {
+    background-color: rgb(51,51,51);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 40px;
+
+}
+.tab {
+    background-color:black;
+    width: 50%;
+    height: 40px;
+    padding-left: 34%;
+    padding-top: 0.8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.tab ::after{
+    content: "•";
+    padding-right: 8px;
+    color: blue;
+}
+
+.main-area {
+    padding-left: 30%;
+    padding-top: 2%;
+    margin-top: 0;
+    padding-right: 0;
+    padding-bottom: 5%;
+}
+.details {
+    z-index: -1;
+} 
+.exp-type {
+    font-size: 80%;
 }
 @-webkit-keyframes blink {
     0% {
@@ -118,6 +196,15 @@ li:hover {
     }
 }
 
+#projects {
+    display: none;
+}
+#academics {
+    display: none;
+}
+#contact {
+    display: none;
+}
 
 #npm-install {
     margin-left: 6%;

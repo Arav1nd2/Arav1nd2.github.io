@@ -76,20 +76,49 @@ var consoleScreen = true;
         typer.style.display = "none";
         mainPage.style.display = "block";
     },20000);
-    let dropval = false;
-    function dropdown() {
-            dropval = !dropval;
-            var drop = document.getElementById("dropdown-content");
-            if(dropval) {
-                drop.innerHTML = "<div>" + 
-                "<div class = 'opt'><i class='fab fa-html5 text-danger'></i>&nbsp;General.html</div>"+
-                "<div class = 'opt '><i class='fab fa-css3-alt text-primary'></i>&nbsp;Projects.css</div>"+
-                "<div class = 'opt '><i class='fab fa-js text-warning'></i>&nbsp;  Academics.js</div>"+
-                "<div class = 'opt '><i class='fab fa-react text-primary'></i>&nbsp;Contact.jsx</div>"+
-            "</div>";
-            } else {
-                drop.innerHTML = "";
-            }
+    // let dropval = false;
+    // function dropdown() {
+    //         dropval = !dropval;
+    //         var drop = document.getElementById("dropdown-content");
+    //         if(true) {
+    //             drop.innerHTML = "<div>" + 
+    //             ""+
+    //             ""+
+    //             ""+
+    //             ""+
+    //         "</div>";
+    //         } else {
+    //             drop.innerHTML = "";
+    //         }
             
-    }
+    // }
     //20000
+
+    function setTab(type) { 
+        var tab = document.getElementById("id");
+        if(type === "general") {
+            tab.innerHTML = "General.html";
+            document.getElementById('general').style.display = 'block';
+            document.getElementById('projects').style.display = 'none';
+            document.getElementById('academics').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+        } else if(type === "projects") {
+            tab.innerHTML = "Projects.css";
+            document.getElementById('projects').style.display = 'block';
+            document.getElementById('academics').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById('general').style.display = 'none';
+        } else if(type === "academics") {
+            tab.innerHTML = "Academics.js";
+            document.getElementById('projects').style.display = 'none';
+            document.getElementById('academics').style.display = 'block';
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById('general').style.display = 'none';
+        } else if (type === "contact") {
+            tab.innerHTML = "Contact.jsx";
+            document.getElementById('projects').style.display = 'none';
+            document.getElementById('academics').style.display = 'none';
+            document.getElementById('contact').style.display = 'block';
+            document.getElementById('general').style.display = 'none';
+        }
+    }

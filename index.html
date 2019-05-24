@@ -30,6 +30,8 @@
         <span class="var-highlight">$</span> npm start  </pre>
         <br/>
         <div id="main-page">
+                <div class="header"></div>
+                <div class="tab" id = "id">General.html</div>
                 <div class="sidebar">
                         <ul>
                             <li>
@@ -43,9 +45,99 @@
                 <div class="navbar">
                     <ul class="nav-title">
                         <li class="nav-list-title">Aravind's Profile</li>
-                        <li class="nav-dropdown" onclick = "dropdown()">Portfolio</li>
-                        <div id="dropdown-content"></div>
+                        <li class="nav-dropdown">Open Editors</li>
+                        <div id="dropdown-content">
+                            <div class = 'opt' onclick="setTab('general')"><i class='fab fa-html5 text-danger'></i>&nbsp;General.html</div>
+                            <div class = 'opt ' onclick="setTab('projects')"><i class='fab fa-css3-alt text-primary'></i>&nbsp;Projects.css</div>
+                            <div class = 'opt ' onclick="setTab('academics')"><i class='fab fa-js text-warning'></i>&nbsp;  Academics.js</div>
+                            <div class = 'opt ' onclick="setTab('contact')"><i class='fab fa-react text-primary'></i>&nbsp;Contact.jsx</div>
+                        </div>
                     </ul>
+                </div>
+                <div class="main-area" id = 'general'>
+                    <div>
+                    <h3>A Budding Full stack developer!</h3>
+                    <div class="marks">
+                            <p>I basically work with MERN stack</p>
+                            <p>I am good with ReactJS and Bootstrap and a beginner in backend technologies like NodeJs and Express. </p>
+                            <p> My Skills: </p>
+                            <div class="row">
+                                <div class="col-sm-6 details">
+                                    ReactJs <span class="exp-adv">&bull;</span><br>
+                                    NodeJs  <span class="exp-beg"> &bull; </span><br>
+                                    HTML    <span class="exp-adv">    &bull; </span><br>
+                                    CSS     <span class="exp-adv">    &bull; </span><br>
+                                    JavaScript <span class="exp-adv">    &bull; </span><br>
+                                </div>
+                                <div class="col-sm-5">
+                                    Bootstrap <span class="exp-inter">    &bull; </span><br>
+                                    MaterializeCSS <span class="exp-inter">    &bull; </span><br>
+                                    Firebase <span class="exp-inter">    &bull; </span><br>
+                                    MongoDB <span class="exp-inter">    &bull; </span><br>
+                                    Express <span class="exp-beg">    &bull; </span><br>
+                                </div>
+                            </div>
+                            <br>
+                            <p>Looking forward to learn a lot more! </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <div class="exp-beg"> &bull;  <span class = "exp-type"> Beginner</span></div>
+                        <div class="exp-inter"> &bull; <span class = "exp-type"> Intermediate </span></div>
+                        <div class="exp-adv"> &bull;  <span class = "exp-type"> Advanced </span></div>
+                </div>
+            </div>
+                <div class="main-area" id = 'projects'>
+                   <h5><b class="acad-title">ProdPrint</b> - A website for 3D printing companies to get orders from clients
+                   </h5>
+                   <p><b>Made using ReactJs and Firebase cloud functions</b></p>
+                   <p><small>View it: <a href=" https://devapps-5c8a1.firebaseapp.com"> https://devapps-5c8a1.firebaseapp.com</a></small></p>
+                   <h5><b class="acad-title">React-Youtube</b> - A simple youtube like application</h5>
+                   <p><b>Made using ReactJs and Youtube API</b></p>
+                   <p><small>View it: <a href="https://youtube-redefined.herokuapp.com
+                    ">https://youtube-redefined.herokuapp.com</a></small></p>
+                   <h5><b class="acad-title">React-Instagram</b> -  An Instagram UI clone
+                   </h5>
+                   <p><b>Made using ReactJs and Redux</b></p>
+                   <p><small>GitHub Link : <a href=" https://github.com/Arav1nd2/React-Instagram"> https://github.com/Arav1nd2/React-Instagram</a></small></p>
+                   <br>
+                   <p>Visit all of them at my GitHub link: <a href=" https://github.com/Arav1nd2"> https://github.com/Arav1nd2</a></p>
+                </div>
+                <div class="main-area" id = 'academics'>
+                    <h5 class="acad-title">Sastra Deemed to be University, Thanjavur</h5>
+                    <div class="details">
+                        <p class="branch">B.Tech CSE</p>
+                        <div class="marks">
+                                <p><small>Jul 2017 - Present</small></p>
+                                <p><small>CGPA: 9.07 (including III sem)</small></p>
+                        </div>
+                    </div>
+                    <h5 class="acad-title">Dr. NKS Vivekananda Vidyalaya, Chennai</h5>
+                    <div class="details">
+                        <p class="branch">XII - <i>Senior Secondary</i></p>
+                        <div class="marks">
+                                <p><small>May 2017</small></p>
+                                <p><small>Percentage: 93.60%</small></p>
+                        </div>
+                        
+                        <p class="branch">X - <i>Secondary</i></p>
+                        <div class="marks">
+                            <p><small>May 2015</small></p>
+                            <p><small>CGPA: 10/10 </small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-area" id = 'contact'>
+                    <h4 class="acad-title">Contact Me!!</h4>
+                    <br>
+                    <div class="marks">
+                            <p>Phone: +91-9486007214</p>
+                            <p>Email: aravindsrinivasan2000@gmail.com</p>
+                            <p>LinkedIn: <a href="www.linkedin.com/in/aravind-srinivasan-00">www.linkedin.com/in/aravind-srinivasan-00</a></p>
+                            <p>Address: 22/14, Devi Street, Elango Nagar, Ambattur, Chennai - 600053 </p>
+                            <p>GitHub: <a href="www.github.com/Arav1nd2">www.github.com/Arav1nd2</a> </p>
+                    </div>
+                    
                 </div>
                 <footer class="d-flex justify-content-between">
                         <div class="container">
