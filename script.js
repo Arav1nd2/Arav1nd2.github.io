@@ -75,7 +75,7 @@ var consoleScreen = true;
     setTimeout(function() {
         typer.style.display = "none";
         mainPage.style.display = "block";
-    },1000);
+    },20000);
     
     //20000
 
